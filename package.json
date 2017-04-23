@@ -4,12 +4,18 @@
   "description": "The web version of the shared use app.",
   "scripts": {
     "start": "http-server",
-    "lint": "standard --fix public/js/*.js && standard --fix public/js/controllers/*.js"
+    "lint": "standard --fix public/javascripts/*.js && standard --fix public/javascripts/controllers/*.js"
   },
   "devDependencies": {
     "standard": "^9.0.1"
   },
   "standard": {
-    "globals": ["angular"]
+    "globals": [
+      "angular",
+      "app"
+    ]
+  },
+  "dependencies": {
+    "angular-route": "^1.6.4"
   }
 }
