@@ -4,7 +4,7 @@
   "description": "The web version of the shared use app.",
   "main": "index.js",
   "scripts": {
-    "lint": "standard --fix public/js/**"
+    "lint": "standard --fix public/js/*.js && standard --fix public/js/controllers/*.js"
   },
   "devDependencies": {
     "standard": "^9.0.1"
