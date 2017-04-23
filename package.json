@@ -12,7 +12,8 @@
   "standard": {
     "globals": [
       "angular",
-      "app"
+      "app",
+      "$"
     ]
   },
   "dependencies": {
