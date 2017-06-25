@@ -1,10 +1,10 @@
 {
   "name": "shareduse",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The web version of the shared use app.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server",
+    "lint": "standard --fix public/javascripts/*.js && standard --fix public/javascripts/controllers/*.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/phxbrigade/SharedUseWeb-App/issues"
   },
-  "homepage": "https://github.com/phxbrigade/SharedUseWeb-App#readme"
+  "homepage": "https://github.com/phxbrigade/SharedUseWeb-App#readme",
+  
+  "standard": {
+    "globals": [
+      "angular",
+      "app",
+      "$"
+    ]
+  },
+  "dependencies": {
+    "angular-route": "^1.6.4"
+  }
 }
