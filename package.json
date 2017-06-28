@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The web version of the shared use app.",
   "scripts": {
-    "start": "http-server",
+    "start": "./node_modules/http-server/bin/http-server",
     "lint": "standard --fix public/javascripts/*.js && standard --fix public/javascripts/controllers/*.js"
   },
   "repository": {
@@ -16,7 +16,6 @@
     "url": "https://github.com/phxbrigade/SharedUseWeb-App/issues"
   },
   "homepage": "https://github.com/phxbrigade/SharedUseWeb-App#readme",
-  
   "standard": {
     "globals": [
       "angular",
@@ -25,6 +24,7 @@
     ]
   },
   "dependencies": {
-    "angular-route": "^1.6.4"
+    "angular-route": "^1.6.4",
+    "http-server": "^0.10.0"
   }
 }
