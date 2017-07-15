@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "angular-route": "^1.6.4",
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "nodejs": "0.0.0"
   }
 }
